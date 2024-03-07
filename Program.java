@@ -33,6 +33,16 @@ public class Program {
             }
             System.out.print("}\n");
             bw.newLine();
+
+            //Print out Inter Arrival Times
+            bw.write("Inter-Arrival Times, ");
+            System.out.print("The inter-arrival times are: \t{ ");
+            for (int i = 0; i < 99; i++) {
+                System.out.print(jobs.get(i).getInterArrivalTime() + ", ");
+                bw.write(jobs.get(i).getInterArrivalTime() + ", ");
+            }
+            System.out.print("}\n");
+            bw.newLine();
             
             //Print out Service Times
             bw.write("Service Times, ");
